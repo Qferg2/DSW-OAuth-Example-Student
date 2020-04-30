@@ -12,4 +12,12 @@
 <p>This is a sample application to demonstrate authenticating against github oauth,
 using Flask, on Heroku.</p>
 
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <div>{{ message }}</div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
 {% endblock %}
