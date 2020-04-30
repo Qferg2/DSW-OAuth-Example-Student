@@ -15,7 +15,7 @@ using Flask, on Heroku.</p>
 {% with messages = get_flashed_messages() %}
   {% if messages %}
     {% for message in messages %}
-      <div>{{ message }}</div>
+      <div class="alert alert-success">{{ message }}</div>
     {% endfor %}
   {% endif %}
 {% endwith %}
