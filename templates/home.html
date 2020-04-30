@@ -3,14 +3,6 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-  <h1>Home</h1>
-  <ul>
-    <li><a href="/page1">That thing we do</a></li>
-    <li><a href="/page2">The other thing</a></li>
-  </ul>
-
-<p>This is a sample application to demonstrate authenticating against github oauth,
-using Flask, on Heroku.</p>
 
 {% with messages = get_flashed_messages() %}
   {% if messages %}
@@ -19,5 +11,14 @@ using Flask, on Heroku.</p>
     {% endfor %}
   {% endif %}
 {% endwith %}
+
+  <h1>Home</h1>
+  <ul>
+    <li><a href="/page1">That thing we do</a></li>
+    <li><a href="/page2">The other thing</a></li>
+  </ul>
+
+<p>This is a sample application to demonstrate authenticating against github oauth,
+using Flask, on Heroku.</p>
 
 {% endblock %}
