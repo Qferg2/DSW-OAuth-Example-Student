@@ -54,7 +54,7 @@ def authorized():
     resp = github.authorized_response()
     if resp is None:
         session.clear()
-        flash('Access denied: reason=' + request.args['error'] + ' error=' + request.args['error_description'] + ' full=' + pprint.pformat(request.args)')
+        flash('Error. Access denied.')
     else:
         try:
             #save user data and set log in message
